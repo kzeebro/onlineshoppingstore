@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Shirts</h2><hr /><br />
+
+
+@foreach(var x in Model)
+{
+    <a href="~/Home/Detail/@x.Id"><img src="~/Image/@x.ImageUrl" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px"></a>
+}
+
+
+
+            @*<img src="~/Image/Shirt1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt2.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt3.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt4.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt5.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt6.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt7.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt8.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">            
+            <img src="~/Image/Shirt9.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">
+            <img src="~/Image/Shirt10.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:300px; height:300px">*@

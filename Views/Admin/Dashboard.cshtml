@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+@model IEnumerable<Project1.Models.Item>
+
+            <div id="home">
+                <label for="sel1">Filter:</label>
+                <select class="form-control" id="sel1">
+                    <option value="">--Select--</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="TShirt">TShirt</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Watchs">Watchs</option>
+                    <option value="Pents">Pents</option>
+                </select>
+                <br />
+
+                <div id="change">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Item Id</th>
+                                <th>Item Name</th>
+                                <th>Release Date</th>
+                                <th>Detail | Update | Delete </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var x in Model)
+                            {
+                                <tr>
+                                    <td><img src="~/Image/@x.ImageUrl" class="img-thumbnail" style="height:150px; width:150px" alt="MyPic" /></td>
+                                    <td>@x.Id</td>
+                                    <td>@x.Category</td>
+                                    <td>@x.Price</td>
+                                    <td>
+                                        <a href="~/Admin/Detail/@x.Id">Detail</a> |
+                                        <a href="~/Admin/Update/@x.Id">Update</a> |
+                                        <a href="~/Admin/Delete/@x.Id">Delete</a>
+                                        @*@Html.ActionLink("Detail", "#") |
+                            @Html.ActionLink("Update", "#") |
+                            @Html.ActionLink("Delete", "#")*@
+                                    </td>
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+<script>
+    $(document).ready(function(){
+        function fun() {
+            var c = $("#sel1").val();
+            alert(c);
+        }
+    });
+</script>

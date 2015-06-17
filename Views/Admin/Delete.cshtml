@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+@*@model Industry.Models.item*@
+
+
+@*<div class="row">
+
+    <div class="col-sm-2">
+
+    </div>
+
+    <div class="col-sm-4">*@
+ 
+       <h3>Are you sure to Delete this?</h3><hr />
+        @foreach(var x in Model)
+        {
+            <h3>@x.Id</h3>
+            <h3>@x.Category</h3>
+            <h4>@x.Price</h4>
+            <h4>@x.Description</h4>
+            <h4>@x.ImageUrl</h4>
+            
+            <a href="~/Admin/Dashboard" class="btn btn-default" role="button">Cancel</a>
+            <a href="~/Admin/SaveDelete/@x.Id" class="btn btn-primary" role="button">Delete</a>
+        }
+    @*</div>
+
+    <div class="col-sm-6">
+
+    </div>
+
+</div>*@

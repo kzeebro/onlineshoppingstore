@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+@*<div class="row">
+    <div class="col-sm-2">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><b>Dashboard</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="~/Admin/Dashboard">Home</a></td>
+                </tr>
+                <tr>
+                    <td><a href="~/Admin/addItem">Add Item</a></td>
+                </tr>
+                <tr>
+                    <td><div id="sh" style="color:blue;">Show items</div></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="col-sm-6">*@
+
+
+        @*<h2>Detail</h2>*@
+
+        @foreach (var x in Model)
+{
+    <table class="table table-striped" @*class="table table-hover"*@>
+        <tbody>
+            <tr>
+                <td>Id</td>
+                <td>@x.Id</td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>@x.Category</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>@x.Price</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>@x.Description</td>
+            </tr>
+            <tr>
+                <td>ImageUrl</td>
+                <td>@x.ImageUrl</td>
+            </tr>
+           
+        </tbody>
+        
+    </table>
+            <a href="~/Admin/Dashboard" class="btn btn-default" role="button">Go Back</a>
+}
+
+    @*</div>
+
+    <div class="col-sm-4">
+
+    </div>
+
+</div>*@

@@ -1,0 +1,177 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Men Watchs Index</h2>
+
+@foreach(var x in Model)
+{
+       <a href="~/Home/Detail/@x.Id"><img src="~/Image/@x.ImageUrl" class="img-thumbnail" style="width:300px; height:300px"></a>
+
+}
+
+@*<div class="container">
+
+
+    <img src="~/Image/Watch1.png" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch2.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch3.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch4.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch5.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch6.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch7.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch8.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch9.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch10.jpg" class="img-thumbnail" style="width:300px; height:300px">
+    <img src="~/Image/Watch11.jpg" class="img-thumbnail" style="width:300px; height:300px">
+
+    <img src="~/Image/Watch12.jpg" class="img-thumbnail" style="width:300px; height:300px">*@
+    
+
+
+    @*<div class="row">
+
+
+        <div class="col-sm-2">
+            <div>
+                <div class="list-group">
+                    <a href="~/" class="list-group-item">Home</a>
+                    <a href="MenShirts" class="list-group-item">Men Shirts</a>
+                    <a href="MenRoundShirts" class="list-group-item">Men Round Shirts</a>
+                    <a href="MenJens" class="list-group-item">Men Jens</a>
+                    <a href="MenWatchs" class="list-group-item">Men Watchs</a>
+                    <a href="MenShoes" class="list-group-item">Men Shoes</a>
+                </div>
+            </div>
+        </div>
+             <div class="col-sm-3">
+            <div>
+                <img src="~/Image/Watch1.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch2.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch3.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <img src="~/Image/Watch4.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch5.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch6.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch7.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch8.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch9.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch10.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <div class="col-sm-3">
+            <div>
+                <img src="~/Image/Watch11.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch12.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch13.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch14.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch15.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch16.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch17.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch18.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch19.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <img src="~/Image/Watch20.jpg" class="img-circle" alt="Mehtab Rehman" width="250" height="250">
+            </div>
+            <br>v
+            <br>
+            <br>
+
+        </div>
+
+    </div>*@
+</div>

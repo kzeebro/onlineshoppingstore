@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+@*<div class="row">
+
+    <div class="col-sm-2">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><b>Dashboard</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="~/Admin/Dashboard">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="~/Admin/addItem">Add Item</a></td>
+                    </tr>
+                    <tr>
+                        <td><div id="sh" style="color:blue;">Show items</div></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    <div class="col-sm-4">*@
+    
+
+    <h2>Update Item</h2>
+        <hr />
+        @foreach (var x in Model)
+{
+    <form action="~/Admin/SaveUpdate/@x.Id" method="post" enctype="multipart/form-data">
+                
+        <div class="form-group">
+            <label for="Price">Price</label>
+            <input type="number" class="form-control" value="@x.Price" id="Price" name="Price" required="required">
+        </div>
+
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input type="text" class="form-control" value="@x.Description" id="Description" name="Description" required="required">
+        </div>
+
+      
+
+
+        <button type="submit" class="btn btn-primary">Update item</button>
+        <a href="~/Admin/Dashboard" class="btn btn-default" role="button">Canecl</a>
+    </form>
+}
+
+
+
+    @*</div>
+
+    <div class="col-sm-6">
+
+    </div>
+
+</div>*@
+
+

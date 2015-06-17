@@ -1,0 +1,130 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "singup";
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My form - Formoid bootstrap forms</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            /*//   background:url(bg.jpg);
+            background-image:url(bg.jpg);*/
+            background-image: url("/Image/aaaa.jpg");
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+
+    <style>
+        #pic {
+            /*//   background:url(bg.jpg);
+            background-image:url(bg.jpg);*/
+            background-image: url("/Image/bg.jpg");
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body style="background-color:#EBEBEB">
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://localhost:50154/">Online Shopping</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav" @*style="float:right;padding-right:50px"*@>
+                    <li><a href="http://localhost:50154/">Home</a></li>
+                    <li><a href="~/Home/MenShirts">Shirts</a></li>
+                    <li><a href="~/Home/MenRoundShirts">Round Shirts</a></li>
+                    <li><a href="~/Home/MenJens">Jens</a></li>
+                    <li><a href="~/Home/MenWatchs">Watchs</a></li>
+                    <li><a href="~/Home/MenShoes">Shoes</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container" @*id="pic"*@>
+        <div class="row">
+            <div class="col-sm-7">
+
+            </div>
+          
+            <div class="col-sm-5">
+                
+                   <label style="color:white"><b>Name </b></label><input type="text" name="name" id="name1" />
+                <label style="color:white"><b>Passward </b></label><input type="password" name="pwd" id="pwd1" />
+                
+                <h2 style="color:white">Singup Page</h2>
+
+                <form action="/Account/Add" method="post">
+                    <div class="form-group">
+                        <label for="name" style="color:white"><b>Name</b></label>
+                        <input type="text" class="form-control" name="Name" placeholder="Enter the Name" required="required" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" style="color:white"><b>Email</b></label>
+                        <input type="text" class="form-control" name="Email" placeholder="Enter the Email" required="required" />
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" style="color:white"><b>Password</b></label>
+                        <input type="password" class="form-control" name="Password" placeholder="Enter the Password" required="required" />
+
+                    </div>
+                    @*<div class="form-group">
+                        <label for="password">ReEnter Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Enter the Password Again" required="required" />
+
+                    </div>*@
+                    @*<div class="form-group">
+                        <label for="phone">Enter the Phone Number</label>
+                        <input type="number" class="form-control" name="Phone" placeholder="Enter the Phone" required="required" />
+
+                    </div>*@
+
+                    
+                    <button type="submit" class="btn btn-primary" style="color:white"><b>Button</b></button>
+
+                        @*<div class="submit">
+                    <input type="submit" value="Submit" />
+                </div>*@
+                </form>
+
+
+            </div>
+            </div>
+        </div>
+    
+</body>
+</html>

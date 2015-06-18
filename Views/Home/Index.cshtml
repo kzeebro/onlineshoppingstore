@@ -14,24 +14,32 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <style>
     body {
-        background-color: lightgray;
+        background-color: ActiveCaption;
     }
-#container{
-    height:50px;
-    width:100px
+.container{
+    margin-top:35px;
+    height:40px;
+    width:800px
 }
+    #branding {
+        border-top: 2px solid #bbb;
+        padding-bottom: 10px;
+        position: relative;
+        z-index: 9999;
+    }
 </style>
-
+ 
 
 </head>
 
 <body >
+    <header id="branding"> Online Shopping Mall </header>
     
 
   
     <nav class="navbar navbar-inverse">
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="clr">
             <div class="navbar-header">
                 <a class="navbar-brand" href="http://localhost:50154/">Online Shopping Center</a>
             </div>
@@ -47,7 +55,8 @@
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/Home/SignOut"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="/home/Signin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                    
                 </ul>
             </div>
@@ -120,19 +129,19 @@
                 <div style="background-color:ActiveCaption)">
                     <h2 style="color:blue;font-family:'Times New Roman'">Latest Items:</h2>
                     <a href="~/Home/MenShirts">
-                        <img src="~/Image/Shirt.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:250px; height:300px;margin-right:100px;margin-left:170px" />
+                        <img src="~/Image/Shirt.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width:350px; height:400px;margin-right:100px;margin-left:-65px" />
                     </a>
                     <a href="~/Home/MenRoundShirts">
-                        <img src="~/Image/TShirt.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 250px; height: 300px" />
+                        <img class="img-thumbnail" style="width: 350px; height: 400px; margin-right: 57px; margin-left: -37px;" alt="Mehtab Rehman" src="/Image/TShirt19.jpg"></img>
                     </a>
                     <a href="~/Home/MenJens">
-                        <img src="~/Image/Pent1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 250px; height: 300px;margin-left:100px" /> <br />
+                        <img class="img-thumbnail" style="width: 350px; height: 400px" alt="Mehtab Rehman" src="/Image/Pent5.jpg"></img><br/>
                     </a>
                     <a href="~/Home/MenShoes">
-                        <img src="~/Image/Shoes1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 250px; height: 300px; margin-left: 270px;margin-top:30px;margin-bottom:50px" />
+                        <img src="~/Image/Shoes1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 350px; height: 400px; margin-left: 270px; margin-top: 30px; margin-bottom: 50px" /><br/>
                     </a>
                     <a href="~/Home/MenWatchs">
-                        <img src="~/Image/Watch1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 250px; height: 300px; margin-left: 200px; margin-top: 30px; margin-bottom: 50px" />
+                        <img src="~/Image/Watch1.jpg" class="img-thumbnail" alt="Mehtab Rehman" style="width: 350px; height: 400px; margin-left: 200px; margin-top: 30px; margin-bottom: 50px" /><br>
                     </a>
                 </div>
             <br />
